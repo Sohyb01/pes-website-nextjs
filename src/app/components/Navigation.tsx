@@ -24,10 +24,10 @@ const Navbar = () => {
               About Us
             </Link>
             <Link
-              href="/pages/programs"
+              href="/pages/features"
               className="text-md text-pes_white duration-200 hover:text-pes_orange"
             >
-              Programs
+              Features
             </Link>
             {/* <a
                                 href=""
