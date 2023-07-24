@@ -1,30 +1,34 @@
 "use client";
 
+import Link from "next/link";
+
 const Navbar = () => {
   return (
     <nav className="navbar-desktop bg-pes_logoblue px-[10px] py-2 sm:px-[20px] sm:py-2 md:py-4 xl:px-[220px]">
       <div className="mx-auto flex justify-between sm:container">
-        <div className="nav-logo h-[48px] w-[114px] bg-cover md:h-[74px] md:w-[174px]"></div>
+        <Link href="/">
+          <div className="nav-logo h-[48px] w-[114px] bg-cover md:h-[74px] md:w-[174px]"></div>
+        </Link>
         <div className="container flex w-fit items-center gap-4 lg:gap-8">
           <div className="nav-links container hidden items-center gap-8 lg:flex lg:gap-8">
-            <a
-              href=""
+            <Link
+              href="/pages/features"
               className="text-md text-pes_white duration-200 hover:text-pes_orange"
             >
               Features
-            </a>
-            <a
-              href=""
+            </Link>
+            <Link
+              href="/pages/about"
               className="text-md text-pes_white duration-200 hover:text-pes_orange"
             >
               About Us
-            </a>
-            <a
-              href=""
+            </Link>
+            <Link
+              href="/pages/programs"
               className="text-md text-pes_white duration-200 hover:text-pes_orange"
             >
               Programs
-            </a>
+            </Link>
             {/* <a
                                 href=""
                                 className="text-md  flex items-center gap-2 fill-pes_white text-pes_white duration-200 hover:fill-pes_orange hover:text-pes_orange"

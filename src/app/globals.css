@@ -95,11 +95,11 @@ a {
 
 .nav-logo,
 .footer-logo {
-  background-image: url(./assets/logo-white.png);
+  background-image: url(./public/logo-white.png);
 }
 
 .hero-section {
-  background-image: url(./assets/hero-image-extended-min.jpg);
+  background-image: url(./public/hero-image-extended-min.jpg);
   position: relative;
 }
 
@@ -123,7 +123,7 @@ a {
 }
 
 .pes-video {
-  background-image: url(./assets/video-image-min.png);
+  background-image: url(./public/video-image-min.png);
 }
 
 /* Partners animation! */
@@ -158,23 +158,23 @@ a {
 }
 
 .partner-1 {
-  background-image: url(./assets/client1-min.png);
+  background-image: url(./public/client1-min.png);
 }
 
 .partner-2 {
-  background-image: url(./assets/client2-min.png);
+  background-image: url(./public/client2-min.png);
 }
 
 .partner-3 {
-  background-image: url(./assets/client3-min.png);
+  background-image: url(./public/client3-min.png);
 }
 
 .partner-4 {
-  background-image: url(./assets/client4-min.png);
+  background-image: url(./public/client4-min.png);
 }
 
 .partner-5 {
-  background-image: url(./assets/client5-min.png);
+  background-image: url(./public/client5-min.png);
 }
 
 .frame {
@@ -183,7 +183,7 @@ a {
 }
 
 .learn-at-frame::after {
-  background-image: url(./assets/Frame1-min.png);
+  background-image: url(./public/Frame1-min.png);
   content: "";
   z-index: -1;
   position: absolute;
@@ -197,7 +197,7 @@ a {
 }
 
 .learn-online-frame::after {
-  background-image: url(./assets/Frame2-min.png);
+  background-image: url(./public/Frame2-min.png);
   content: "";
   z-index: -1;
   position: absolute;
@@ -216,15 +216,15 @@ a {
 }
 
 .businessman-img {
-  background-image: url(./assets/boy-with-pen-tablet-notes-min.jpg);
+  background-image: url(./public/boy-with-pen-tablet-notes-min.jpg);
 }
 
 .testimonials-image {
-  background-image: url(./assets/testimonials-min.png);
+  background-image: url(./public/testimonials-min.png);
 }
 
 .partnerships-image {
-  background-image: url(./assets/schoolchildren-typing-laptop.jpg);
+  background-image: url(./public/schoolchildren-typing-laptop.jpg);
 }
 
 .member-socials {
