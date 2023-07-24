@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <div>
         {/* Hero Section */}
-        <section className="">
+        <section className="m-0">
           <div className="hero-section flex h-[482px] flex-col items-center gap-8 bg-cover bg-bottom px-[10px] py-[20px] sm:px-[20px] sm:py-[40px] md:h-[789px] lg:h-[720px] lg:py-[60px] xl:h-[794px] xl:px-[220px] xl:py-[80px] 2xl:h-[974px]">
             <div className="z-10 flex flex-col gap-8 sm:container lg:gap-16">
               <div className="flex flex-col">
