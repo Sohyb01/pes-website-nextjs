@@ -4,9 +4,11 @@ import Link from "next/link";
 
 const error = () => {
   return (
-    <div>
-      <h1>Page not found</h1>
-      <Link href="/">Back to home</Link>
+    <div className="w-full h-[100vh] flex flex-col items-center p-10">
+      <h1 className="text-center text-2xl">Page not added yet, Coming soon!</h1>
+      <Link href="/" className="text-pes_lightblue">
+        Back to home
+      </Link>
     </div>
   );
 };
