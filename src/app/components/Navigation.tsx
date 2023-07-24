@@ -12,10 +12,10 @@ const Navbar = () => {
         <div className="container flex w-fit items-center gap-4 lg:gap-8">
           <div className="nav-links container hidden items-center gap-8 lg:flex lg:gap-8">
             <Link
-              href="/pages/features"
+              href="/"
               className="text-md text-pes_white duration-200 hover:text-pes_orange"
             >
-              Features
+              Home
             </Link>
             <Link
               href="/pages/about"
