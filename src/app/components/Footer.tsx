@@ -34,7 +34,7 @@ const Footer = () => {
           </clipPath>
         </defs>
       </svg>
-      <section className="bg-pes_logoblue">
+      <div className="bg-pes_logoblue">
         <div className="mx-auto  px-[10px] py-[16px] sm:container md:px-[30px] md:py-[40px] lg:max-w-[1080px] lg:px-[40px] lg:py-[80px]">
           {/* Entire footer container */}
           <div className="flex flex-col gap-8 md:gap-16">
@@ -195,7 +195,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 };

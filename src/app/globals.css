@@ -93,6 +93,10 @@ a {
   color: inherit;
 }
 
+section {
+  margin: 20px 0px;
+}
+
 .nav-logo,
 .footer-logo {
   background-image: url(./public/logo-white.png);
@@ -231,7 +235,39 @@ a {
   content: ""
 }
 
+/* Integrations Images */
+.integration-1 {
+  background-image: url(./public/arduino-min.png);
+}
 
+.integration-2 {
+  background-image: url(./public/python-min.png);
+}
+
+.integration-3 {
+  background-image: url(./public/scratch-min.png);
+}
+
+.integration-4 {
+  background-image: url(./public/microsoft-min.png);
+}
+
+/* Features images */
+.tool-img-1 {
+  background-image: url(./public/tool-1.png);
+}
+
+.tool-img-2 {
+  background-image: url(./public/tool-2.png);
+}
+
+.tool-img-3 {
+  background-image: url(./public/tool-3.png);
+}
+
+.tool-img-4 {
+  background-image: url(./public/tool-4.png);
+}
 
 @media screen and (min-width: 1080px) {
   .hero-section {
