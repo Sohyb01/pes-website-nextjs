@@ -1,11 +1,8 @@
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
 import TestimonialsSwiper from "./components/TestimonialsSwiper";
 
 export default function Home() {
   return (
     <>
-      <Navbar></Navbar>
       <div>
         {/* Hero Section */}
         <section className="">
@@ -261,7 +258,6 @@ export default function Home() {
               </div>
           </section> */}
       </div>
-      <Footer></Footer>
     </>
   );
 }
