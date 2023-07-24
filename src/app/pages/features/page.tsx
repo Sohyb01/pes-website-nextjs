@@ -43,7 +43,7 @@ const page = () => {
 
       {/* Tools section 1*/}
       <section className="mx-auto px-[10px] py-[16px] sm:container sm:py-[16px] md:px-[30px] md:py-[40px] lg:max-w-[1080px] lg:px-[40px] lg:py-[80px]">
-        <div className="flex flex-col items-center lg:flex-row-reverse">
+        <div className="flex flex-col gap-4 items-center lg:flex-row-reverse">
           <div className="tool-img-1 bg-cover aspect-[407/367] w-full max-w-[407px]"></div>
           <div className="w-full">
             <h1 className="mb-4 text-left text-xl font-bold text-pes_darkblue md:text-center lg:text-left lg:text-2xl">
@@ -78,7 +78,7 @@ const page = () => {
 
       {/* Tools section 2*/}
       <section className="mx-auto px-[10px] py-[16px] sm:container sm:py-[16px] md:px-[30px] md:py-[40px] lg:max-w-[1080px] lg:px-[40px] lg:py-[80px]">
-        <div className="flex flex-col items-center lg:flex-row">
+        <div className="flex flex-col gap-4 items-center lg:flex-row">
           <div className="tool-img-2 bg-cover aspect-[407/458] w-full max-w-[407px]"></div>
           <div className="w-full">
             <h1 className="mb-4 text-left text-xl font-bold text-pes_darkblue md:text-center lg:text-left lg:text-2xl">
@@ -112,7 +112,7 @@ const page = () => {
 
       {/* Tools section 3*/}
       <section className="mx-auto px-[10px] py-[16px] sm:container sm:py-[16px] md:px-[30px] md:py-[40px] lg:max-w-[1080px] lg:px-[40px] lg:py-[80px]">
-        <div className="flex flex-col items-center lg:flex-row-reverse">
+        <div className="flex flex-col gap-4 items-center lg:flex-row-reverse">
           <div className="tool-img-3 bg-cover aspect-[407/303] w-full max-w-[407px]"></div>
           <div className="w-full">
             <h1 className="mb-4 text-left text-xl font-bold text-pes_darkblue md:text-center lg:text-left lg:text-2xl">
@@ -149,7 +149,7 @@ const page = () => {
 
       {/* Tools section 4*/}
       <section className="mx-auto px-[10px] py-[16px] sm:container sm:py-[16px] md:px-[30px] md:py-[40px] lg:max-w-[1080px] lg:px-[40px] lg:py-[80px]">
-        <div className="flex flex-col items-center lg:flex-row">
+        <div className="flex flex-col gap-4 items-center lg:flex-row">
           <div className="tool-img-4 bg-cover aspect-[407/278] w-full max-w-[407px]"></div>
           <div className="w-full">
             <h1 className="mb-4 text-left text-xl font-bold text-pes_darkblue md:text-center lg:text-left lg:text-2xl">
