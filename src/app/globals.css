@@ -97,9 +97,7 @@ section {
   margin: 20px 0px;
 }
 
-.navbar-desktop {
-  background: rgba(0, 0, 0, 0.3);
-}
+.navbar-desktop {}
 
 .nav-logo,
 .footer-logo {
@@ -107,12 +105,12 @@ section {
 }
 
 .hero-section {
-  background-image: url(./public/mesh-gradient-bg.jpg);
+  background-image: url(./public/mesh-gradient-bg-min.jpg);
   position: relative;
 }
 
 .hero-section-img {
-  background-image: url(./public/boys-gaming-sticker.png);
+  background-image: url(./public/boys-gaming-sticker-min.png);
 }
 
 .pes-video {

@@ -1,30 +1,47 @@
 "use client";
 
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
+  const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    function handleScroll() {
+      setIsFixed(window.scrollY > window.innerHeight);
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const navbarClass = isFixed ? "fixed" : "absolute";
+
   return (
-    <nav className="navbar-desktop w-full fixed z-50 px-[10px] py-4 sm:px-[20px] md:px-10">
+    <nav
+      className={`navbar-desktop duration-200 w-full top-0 z-50 px-[10px] py-4 sm:px-[20px] md:px-10 bg-pes_logoblue ${navbarClass}`}
+    >
       <div className="mx-auto flex justify-between items-center sm:max-w-[1000px]">
-        <Link href="/">
-          <div className="nav-logo h-[48px] w-[114px] bg-cover md:h-[74px] md:w-[174px]"></div>
+        <Link href="/home">
+          <div className="nav-logo h-[48px] w-[114px] bg-cover lg:h-[74px] lg:w-[174px]"></div>
         </Link>
         <div className="container flex w-fit items-center gap-4 lg:gap-8">
           <div className="nav-links container hidden items-center gap-8 lg:flex lg:gap-8">
             <Link
-              href="/"
+              href="/home"
               className="text-md text-pes_white duration-200 hover:text-pes_orange"
             >
               Home
             </Link>
             <Link
-              href="/pages/about"
+              href="/about"
               className="text-md text-pes_white duration-200 hover:text-pes_orange"
             >
               About Us
             </Link>
             <Link
-              href="/pages/features"
+              href="/features"
               className="text-md text-pes_white duration-200 hover:text-pes_orange"
             >
               Features
@@ -119,39 +136,38 @@ const Navbar = () => {
               className="menu dropdown-content rounded-box z-[50] h-fit bg-base-100"
             >
               <li className="">
-                <a className="text-pes_lightblue duration-200 hover:text-pes_orange">
-                  Become an Instructor
-                </a>
+                <Link
+                  href="/home"
+                  className="text-pes_lightblue duration-200 hover:text-pes_orange"
+                >
+                  Home
+                </Link>
               </li>
               <li className="">
-                <a className="text-pes_lightblue duration-200 hover:text-pes_orange">
-                  Online courses
-                </a>
+                <Link
+                  href="/about"
+                  className="text-pes_lightblue duration-200 hover:text-pes_orange"
+                >
+                  About Us
+                </Link>
               </li>
               <li className="">
-                <a className="text-pes_lightblue duration-200 hover:text-pes_orange">
-                  Partnerships
-                </a>
+                {" "}
+                <Link
+                  href="/features"
+                  className="text-pes_lightblue duration-200 hover:text-pes_orange"
+                >
+                  Features
+                </Link>
               </li>
               <li className="">
-                <a className="text-pes_lightblue duration-200 hover:text-pes_orange">
-                  Certifications
-                </a>
-              </li>
-              <li className="">
-                <a className="text-pes_lightblue duration-200 hover:text-pes_orange">
-                  Franchises
-                </a>
-              </li>
-              <li className="">
-                <a className="text-pes_lightblue duration-200 hover:text-pes_orange">
-                  Leaderboard
-                </a>
-              </li>
-              <li className="">
-                <a className="text-pes_lightblue duration-200 hover:text-pes_orange">
-                  Free Trial
-                </a>
+                {" "}
+                <Link
+                  href="/contact"
+                  className="text-pes_lightblue duration-200 hover:text-pes_orange"
+                >
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
