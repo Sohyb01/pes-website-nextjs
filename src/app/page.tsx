@@ -6,33 +6,47 @@ export default function Home() {
       <div>
         {/* Hero Section */}
         <section className="m-0">
-          <div className="hero-section flex h-[482px] flex-col items-center gap-8 bg-cover bg-bottom px-[10px] py-[20px] sm:px-[20px] sm:py-[40px] md:h-[789px] lg:h-[720px] lg:py-[60px] xl:h-[794px] xl:px-[220px] xl:py-[80px] 2xl:h-[974px]">
-            <div className="z-10 flex flex-col gap-8 sm:container lg:gap-16">
-              <div className="flex flex-col">
-                <h1 className="max-w-[17ch] text-2xl font-bold text-pes_logoblue md:text-5xl 2xl:text-6xl">
-                  <span className="text-pes_orange">Programming </span> is now
-                  much easier
-                </h1>
-                <p className="max-w-[38ch] text-pes_darkblue sm:max-w-[30ch] md:text-xl 2xl:text-2xl">
-                  PES is an interactive platform that will teach you in a more
-                  interesting way
-                </p>
-              </div>
-              <div className="flex gap-4 md:gap-8">
-                <button className="h-fit rounded-full bg-pes_orange px-8 py-4 text-sm text-pes_white duration-200 hover:bg-orange-300 md:text-lg">
-                  Join Us
-                </button>
-                <button className="grid h-[53px] w-[53px] place-items-center rounded-full border-2 border-solid border-pes_darkblue bg-pes_white fill-pes_darkblue duration-200 hover:border-pes_orange hover:bg-pes_orange hover:fill-pes_white md:h-16 md:w-16">
-                  <svg
-                    className="ml-[3px]"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="20"
-                    viewBox="0 0 24 28"
-                  >
-                    <path d="M23 13.134C23.6667 13.5189 23.6667 14.4811 23 14.866L2 26.9904C1.33333 27.3753 0.500001 26.8942 0.500001 26.1244L0.500002 1.87564C0.500002 1.10584 1.33334 0.624718 2 1.00962L23 13.134Z" />
-                  </svg>
-                </button>
+          <div className="hero-section bg-cover pt-[85px] h-[631px] sm:h-[746px] md:h-[615px] lg:pt-[106px] bg-no-repeat lg:h-[699px]">
+            <div className="lg:mx-auto h-full lg:max-w-[1080px] bg-none relative px-[10px] py-[32px] sm:px-[20px] sm:py-[40px] flex flex-col items-center lg:py-[80px] lg:px-[40px]">
+              <div className="hero-section-img hidden sm:block sm:absolute h-[385px] w-[290px] md:w-[346px] md:h-[458px] lg:w-[435px] lg:h-[576px] bg-cover sm:left-auto sm:right-auto sm:bottom-0 md:right-[30px] lg:right-[40px]"></div>
+              <div className="z-10 flex flex-col gap-8 sm:gap-16 container md:gap-16">
+                <div className="flex flex-col gap-4">
+                  <h1 className="max-w-[17ch] leading-[110%] text-4xl font-bold text-pes_white lg:text-5xl">
+                    Invest in your{" "}
+                    <span className="text-pes_orange leading-[110%]">
+                      children&apos;s future
+                    </span>
+                  </h1>
+                  <p className="max-w-[38ch] text-pes_lightgray text-lg">
+                    We provide the best learning experience for children, and
+                    our courses & certifications are recognized by government
+                    institutions.
+                  </p>
+                </div>
+                <div className="flex gap-4 md:gap-8 sm:justify-between md:justify-start">
+                  <button className="h-fit rounded-full bg-pes_orange px-8 py-4 text-base text-pes_white duration-200 hover:bg-orange-300">
+                    Join Us
+                  </button>
+                  <div className="watch-video-button-and-link flex gap-2 items-center">
+                    <button className="grid place-items-center rounded-full border-2 border-solid border-pes_orange bg-pes_white fill-pes_orange duration-200 hover:bg-pes_orange hover:fill-pes_white h-[58px] w-[58px]">
+                      <svg
+                        className="ml-[3px]"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="20"
+                        viewBox="0 0 24 28"
+                      >
+                        <path d="M23 13.134C23.6667 13.5189 23.6667 14.4811 23 14.866L2 26.9904C1.33333 27.3753 0.500001 26.8942 0.500001 26.1244L0.500002 1.87564C0.500002 1.10584 1.33334 0.624718 2 1.00962L23 13.134Z" />
+                      </svg>
+                    </button>
+                    <a
+                      href="#"
+                      className="text-sm font-bold text-pes_white underline"
+                    >
+                      Watch Video
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

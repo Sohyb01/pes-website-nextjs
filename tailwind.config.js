@@ -14,7 +14,7 @@ module.exports = {
         pes_black: "#131313",
         pes_white: "#fbfbfb",
         pes_logoblue: "#064ca9",
-        pes_orange: "#f8903f",
+        pes_orange: "#ff7d17",
         pes_lightblue: "#007aff",
         pes_skyblue: "#bce0ff",
         pes_darkblue: "#2f327d",
