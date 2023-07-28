@@ -113,7 +113,7 @@ const About = () => {
                         // backgroundImage: `url('/@fs/D:/Programs/VSCode/Other ReactJS practice/pes-website-tailwind/pes-website-tailwind/src${person.img}')`,
                         backgroundImage: `url(${person.img})`,
                       }}
-                      className="card-img relative flex h-[185px] w-[185px] rounded-sm bg-cover md:h-[300px] md:w-[300px]"
+                      className="card-img relative flex h-[185px] w-[185px] rounded-sm bg-cover md:h-[268px] md:w-[268px]"
                     >
                       <div className="member-socials group z-10 flex h-full w-full items-center justify-center gap-8 bg-transparent duration-200 hover:bg-blue-800 hover:bg-opacity-30">
                         <a
@@ -193,7 +193,7 @@ const About = () => {
                         // backgroundImage: `url('/@fs/D:/Programs/VSCode/Other ReactJS practice/pes-website-tailwind/pes-website-tailwind/src${person.img}')`,
                         backgroundImage: `url(${person.img})`,
                       }}
-                      className="card-img relative flex h-[185px] w-[185px] rounded-sm bg-cover md:h-[300px] md:w-[300px]"
+                      className="card-img relative flex h-[185px] w-[185px] rounded-sm bg-cover md:h-[268px] md:w-[268px]"
                     >
                       <div className="member-socials group z-10 flex h-full w-full items-center justify-center gap-8 bg-transparent duration-200 hover:bg-blue-800 hover:bg-opacity-30">
                         <a

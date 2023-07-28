@@ -17,6 +17,10 @@ export async function POST(request: NextRequest, response: Response) {
 // DELETE A USER
 export async function DELETE(request: NextRequest, response: Response) {
   const id = await request.json();
-  const deletedUser = await prisma.user.delete({ where: id });
+  const deletedUser = await prisma.user.delete({
+    where: {
+      id: 4,
+    },
+  });
   return NextResponse.json({ deletedUser });
 }
