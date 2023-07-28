@@ -73,39 +73,38 @@ const Navbar = () => {
                 className="menu dropdown-content rounded-box z-[50] h-fit bg-base-100"
               >
                 <li className="">
-                  <a className="text-pes_lightblue duration-200 hover:text-pes_orange">
-                    Become an Instructor
-                  </a>
+                  <Link
+                    href="/home"
+                    className="text-pes_lightblue duration-200 hover:text-pes_orange"
+                  >
+                    Home
+                  </Link>
                 </li>
                 <li className="">
-                  <a className="text-pes_lightblue duration-200 hover:text-pes_orange">
-                    Online courses
-                  </a>
+                  <Link
+                    href="/about"
+                    className="text-pes_lightblue duration-200 hover:text-pes_orange"
+                  >
+                    About Us
+                  </Link>
                 </li>
                 <li className="">
-                  <a className="text-pes_lightblue duration-200 hover:text-pes_orange">
-                    Partnerships
-                  </a>
+                  {" "}
+                  <Link
+                    href="/features"
+                    className="text-pes_lightblue duration-200 hover:text-pes_orange"
+                  >
+                    Features
+                  </Link>
                 </li>
                 <li className="">
-                  <a className="text-pes_lightblue duration-200 hover:text-pes_orange">
-                    Certifications
-                  </a>
-                </li>
-                <li className="">
-                  <a className="text-pes_lightblue duration-200 hover:text-pes_orange">
-                    Franchises
-                  </a>
-                </li>
-                <li className="">
-                  <a className="text-pes_lightblue duration-200 hover:text-pes_orange">
-                    Leaderboard
-                  </a>
-                </li>
-                <li className="">
-                  <a className="text-pes_lightblue duration-200 hover:text-pes_orange">
-                    Free Trial
-                  </a>
+                  {" "}
+                  <Link
+                    href="/contact"
+                    className="text-pes_lightblue duration-200 hover:text-pes_orange"
+                  >
+                    Contact
+                  </Link>
                 </li>
               </ul>
             </div>

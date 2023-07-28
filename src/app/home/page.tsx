@@ -96,24 +96,24 @@ export default function Home() {
         <h1 className="mx-auto mb-4 max-w-[30ch] text-center text-xl font-bold text-pes_darkblue lg:text-2xl">
           Our <span className="text-pes_orange">Success</span>
         </h1>
-        <div className="success-numbers flex flex-col items-center justify-center gap-y-4 md:flex-row md:flex-wrap md:gap-x-10 md:gap-y-8">
-          <div className="statistic flex flex-col items-center">
+        <div className="success-numbers flex flex-col items-center justify-center gap-y-4 md:flex-row md:flex-wrap md:gap-x-20 md:gap-y-8 lg:gap-0 lg:justify-between">
+          <div className="statistic flex flex-col items-center lg:w-[200px]">
             <h1 className="text-4xl font-bold text-pes_logoblue">850+</h1>
             <h2 className="text-lg text-pes_darkbluegray">Students</h2>
           </div>
-          <div className="statistic flex flex-col items-center">
+          <div className="statistic flex flex-col items-center lg:w-[200px]">
             <h1 className="text-4xl font-bold text-pes_logoblue">139</h1>
             <h2 className="text-lg text-pes_darkbluegray">Projects</h2>
           </div>
-          <div className="statistic flex flex-col items-center">
+          <div className="statistic flex flex-col items-center lg:w-[200px]">
             <h1 className="text-4xl font-bold text-pes_logoblue">1.7K</h1>
             <h2 className="text-lg text-pes_darkbluegray">Hours of Support</h2>
           </div>
-          <div className="statistic flex flex-col items-center">
+          <div className="statistic flex flex-col items-center lg:w-[200px]">
             <h1 className="text-4xl font-bold text-pes_logoblue">8</h1>
             <h2 className="text-lg text-pes_darkbluegray">Chief Experts</h2>
           </div>
-          <div className="statistic flex flex-col items-center">
+          <div className="statistic flex flex-col items-center lg:w-[200px]">
             <h1 className="text-4xl font-bold text-pes_logoblue">2+</h1>
             <h2 className="text-lg text-pes_darkbluegray">
               Years of Experience
@@ -148,7 +148,7 @@ export default function Home() {
             <span className="text-pes_orange">courses & programs</span>
           </h1>
           <div className="paragraphs flex max-w-[830px] flex-col items-start gap-8 lg:flex-row lg:gap-4">
-            <div className="flex flex-col  gap-4 text-left lg:gap-8 lg:text-center lg:text-lg">
+            <div className="flex flex-col  gap-4 text-left lg:gap-8 lg:text-center lg:text-lg text-pes_darkbluegray">
               <p>
                 We believe that coding is an essential skill for the future, and
                 we are committed to making it accessible and fun for children of
@@ -212,16 +212,16 @@ export default function Home() {
               Make your child a <br className="hidden lg:block" />
               <span className="text-pes_orange">future businessman</span>
             </h1>
-            <p className="text-pes_darkbluegray">
+            <p className="text-pes_darkbluegray lg:text-lg">
               Teaching entrepreneurship to kids is a great way to instill the
               valuable skills and the correct mindset early on.
             </p>
-            <p className="text-pes_darkbluegray">
+            <p className="text-pes_darkbluegray lg:text-lg">
               Our courses are approved by successful entrepreneurs, to teach
               entrepreneurship to children, to be able to start their own
               business an earlier age than others.{" "}
             </p>
-            <p className="text-pes_darkbluegray">
+            <p className="text-pes_darkbluegray lg:text-lg">
               Your children will be grateful for the opportunities you have
               provided for them through our education!
             </p>
@@ -257,7 +257,7 @@ export default function Home() {
               PES has received more than 1.5k positive ratings from our happy
               clients. Are you one of them? Please give us your assessment!
             </p>
-            <button className="h-fit w-fit rounded-full bg-pes_orange px-8 py-4 text-sm text-pes_white duration-200 hover:bg-orange-300 md:text-lg">
+            <button className="h-fit w-fit rounded-full bg-pes_orange px-8 py-4 text-sm text-pes_white duration-200 hover:bg-orange-300 lg:text-base">
               Write Testimonial
             </button>
           </div>
