@@ -10,13 +10,18 @@ export default async function Page() {
       cache: "no-cache",
     }
   );
-  const data = await request.json();
-  const usersData = data.allUsers;
-  console.log(usersData);
+  if (!request.ok) {
+    // This will activate the closest `error.js` Error Boundary
+    console.log("Didn't work");
+  } else {
+    const data = await request.json();
+    const usersData = data.allUsers;
+    console.log(usersData);
+  }
 
   return (
     <>
-      <h1>{JSON.stringify(usersData)}</h1>
+      <h1>Form Test</h1>
     </>
   );
 }
