@@ -1,26 +1,27 @@
-"use client";
-
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { UserButton } from "@clerk/nextjs";
+// import { currentUser } from "@clerk/nextjs";
 
-const Navbar = () => {
-  const [isFixed, setIsFixed] = useState(false);
+const Navbar = async () => {
+  // const user = await currentUser();
+  // Navbar effect
+  // const [isFixed, setIsFixed] = useState(false);
 
-  useEffect(() => {
-    function handleScroll() {
-      setIsFixed(window.scrollY > window.innerHeight);
-    }
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  // useEffect(() => {
+  //   function handleScroll() {
+  //     setIsFixed(window.scrollY > window.innerHeight);
+  //   }
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
-  const navbarClass = isFixed ? "fixed" : "absolute";
+  // const navbarClass = isFixed ? "fixed" : "absolute";
 
   return (
     <nav
-      className={`navbar-desktop duration-200 w-full top-0 z-50 px-[10px] py-4 sm:px-[20px] md:px-10 bg-pes_logoblue ${navbarClass}`}
+      className={`navbar-desktop duration-200 w-full top-0 z-50 px-[10px] py-4 sm:px-[20px] md:px-10 bg-pes_logoblue fixed`}
     >
       <div className="mx-auto flex justify-between items-center sm:max-w-[1000px]">
         <Link href="/home">
@@ -46,20 +47,7 @@ const Navbar = () => {
             >
               Features
             </Link>
-            {/* <a
-                                href=""
-                                className="text-md  flex items-center gap-2 fill-pes_white text-pes_white duration-200 hover:fill-pes_orange hover:text-pes_orange"
-                            >
-                                More
-                                <div className="link-arrow h-2 w-[12px]">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 12 8"
-                                    >
-                                        <path d="M5.9996 8C5.78029 8 5.56087 7.90234 5.39373 7.70703L0.251105 1.70703C-0.0837016 1.31641 -0.0837016 0.683594 0.251105 0.292969C0.585911 -0.0976562 1.1283 -0.0976562 1.4631 0.292969L5.9996 5.5875L10.5369 0.29375C10.8717 -0.0968752 11.4141 -0.0968752 11.7489 0.29375C12.0837 0.684375 12.0837 1.31719 11.7489 1.70781L6.60627 7.70781C6.43886 7.90312 6.21923 8 5.9996 8Z" />
-                                    </svg>
-                                </div>
-                            </a> */}
+
             <div className="dropdown-end dropdown">
               <label
                 tabIndex={0}
@@ -109,9 +97,13 @@ const Navbar = () => {
               </ul>
             </div>
           </div>
-          <button className="text-md h-fit rounded-full bg-pes_orange px-8 py-4 text-pes_white duration-200 hover:bg-orange-300">
+          <Link
+            href="/sign-up"
+            className="text-md h-fit rounded-full bg-pes_orange px-8 py-4 text-pes_white duration-200 hover:bg-orange-300"
+          >
             <div className="w-[6ch]">Sign Up</div>
-          </button>
+          </Link>
+
           <div className="dropdown-end dropdown">
             <label
               tabIndex={0}
