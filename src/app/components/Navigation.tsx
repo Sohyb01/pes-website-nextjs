@@ -1,6 +1,4 @@
 import Link from "next/link";
-import { UserButton } from "@clerk/nextjs";
-// import { currentUser } from "@clerk/nextjs";
 
 const Navbar = async () => {
   // const user = await currentUser();
@@ -97,12 +95,9 @@ const Navbar = async () => {
               </ul>
             </div>
           </div>
-          <Link
-            href="/sign-up"
-            className="text-md h-fit rounded-full bg-pes_orange px-8 py-4 text-pes_white duration-200 hover:bg-orange-300"
-          >
+          <button className="text-md h-fit rounded-full bg-pes_orange px-8 py-4 text-pes_white duration-200 hover:bg-orange-300">
             <div className="w-[6ch]">Sign Up</div>
-          </Link>
+          </button>
 
           <div className="dropdown-end dropdown">
             <label
