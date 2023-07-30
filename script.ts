@@ -11,7 +11,6 @@ async function main() {
       age: 54,
     },
   });
-  console.log(newUser);
 }
 
 main()
