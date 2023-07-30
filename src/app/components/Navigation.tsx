@@ -1,7 +1,11 @@
+import { UserButton } from "@clerk/nextjs";
+import { auth } from "@clerk/nextjs";
+import { currentUser } from "@clerk/nextjs";
 import Link from "next/link";
 
 const Navbar = async () => {
-  // const user = await currentUser();
+  const user = await currentUser();
+  const { userId } = auth();
   // Navbar effect
   // const [isFixed, setIsFixed] = useState(false);
 
@@ -95,9 +99,23 @@ const Navbar = async () => {
               </ul>
             </div>
           </div>
-          <button className="text-md h-fit rounded-full bg-pes_orange px-8 py-4 text-pes_white duration-200 hover:bg-orange-300">
-            <div className="w-[6ch]">Sign Up</div>
-          </button>
+          {/* Normal Sign Up Button */}
+          {!user && (
+            <Link
+              href="/sign-up"
+              className="text-md h-fit rounded-full bg-pes_orange px-8 py-4 text-pes_white duration-200 hover:bg-orange-300"
+            >
+              <p className="w-[6ch]"></p>
+              Sign Up
+              {/* <div className="w-[6ch]">Sign Up</div> */}
+            </Link>
+          )}
+          {/* Clerk User Button */}
+          {user && (
+            <div className="flex text-pes_white">
+              <UserButton afterSignOutUrl="/home"></UserButton>
+            </div>
+          )}
 
           <div className="dropdown-end dropdown">
             <label
