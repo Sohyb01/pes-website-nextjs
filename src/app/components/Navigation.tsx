@@ -21,13 +21,13 @@ const Navbar = async () => {
       className={`navbar-desktop duration-200 w-full top-0 z-50 px-[10px] py-4 sm:px-[20px] md:px-10 bg-pes_logoblue fixed`}
     >
       <div className="mx-auto flex justify-between items-center sm:max-w-[1000px]">
-        <Link href="/home">
+        <Link href="/">
           <div className="nav-logo h-[48px] w-[114px] bg-cover lg:h-[74px] lg:w-[174px]"></div>
         </Link>
         <div className="container flex w-fit items-center gap-4 lg:gap-8">
           <div className="nav-links container hidden items-center gap-8 lg:flex lg:gap-8">
             <Link
-              href="/home"
+              href="/"
               className="text-md text-pes_white duration-200 hover:text-pes_orange"
             >
               Home
@@ -59,7 +59,7 @@ const Navbar = async () => {
               >
                 <li className="">
                   <Link
-                    href="/home"
+                    href="/"
                     className="text-pes_lightblue duration-200 hover:text-pes_orange"
                   >
                     Home
@@ -122,7 +122,7 @@ const Navbar = async () => {
             >
               <li className="">
                 <Link
-                  href="/home"
+                  href="/"
                   className="text-pes_lightblue duration-200 hover:text-pes_orange"
                 >
                   Home

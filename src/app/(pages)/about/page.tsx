@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import members from "../data/members";
+import members from "../../data/members";
 
 const About = () => {
   const [founderData] = useState(members.founders);
