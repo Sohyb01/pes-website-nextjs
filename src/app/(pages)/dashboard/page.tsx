@@ -11,9 +11,6 @@ export default async function Dashboard() {
     redirect("/api/auth/signin?callbackUrl=/server");
   }
 
-  console.log("Session");
-  console.log(session.user);
-
   if (session.user.role === "admin") {
     return (
       <div className="w-full h-[100vh] flex flex-col items-center justify-center p-10">
@@ -38,7 +35,7 @@ export default async function Dashboard() {
 
   if (session.user.role === "student")
     return (
-      <div className="w-full h-full flex flex-col items-center justify-center">
+      <div className="w-full h-[100vh] flex flex-col items-center justify-center">
         <h1 className="text-center text-2xl">
           You do not have permission to view this page!
         </h1>

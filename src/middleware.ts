@@ -15,7 +15,9 @@ export default withAuth(
   {
     callbacks: {
       authorized: ({ token }) =>
-        token?.role === "admin" || token?.role === "manager", // Unless this is true, the middleware function will NOT execute!
+        token?.role === "admin" ||
+        token?.role === "manager" ||
+        token?.role === "student", // Unless this is true, the middleware function will NOT execute!
     },
   }
 );
