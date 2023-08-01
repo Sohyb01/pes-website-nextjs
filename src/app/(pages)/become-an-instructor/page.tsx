@@ -1,7 +1,6 @@
 "use client";
 
 import { useFormik } from "formik";
-import { FormEvent } from "react";
 import { instructorSchema } from "../../validations/instructorsignup";
 
 export default function Contact() {

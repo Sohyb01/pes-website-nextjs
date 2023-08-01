@@ -1,6 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+// import AuthProvider from "./context/AuthProvider";
+// Wrap this around the return if you wish to use Session data in client components
 
 const poppins = Poppins({
   weight: ["400", "700"],
