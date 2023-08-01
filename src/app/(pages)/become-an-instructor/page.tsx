@@ -2,7 +2,7 @@
 
 import { useFormik } from "formik";
 import { FormEvent } from "react";
-import { instructorSchema } from "../validations/instructorsignup";
+import { instructorSchema } from "../../validations/instructorsignup";
 
 export default function Contact() {
   const onSubmit = async (values: Object, actions: any) => {
